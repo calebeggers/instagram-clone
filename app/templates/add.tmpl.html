@@ -1,0 +1,24 @@
+<div class="header">
+	<div class="top">
+		<div class="logo">
+			<a href="/#/home">
+				<img src="../images/insta-logo.png">
+			</a>
+		</div>
+		<div class="add-photo">
+			<div class="add-button"><a href="/#/add">+</a></div>
+		</div>
+	</div>
+</div>
+<div class="body3" ng-controller="AddController">
+	<div class="add-info">
+		<div class="form-title">Submit A New Photo</div>
+		<form class="form" ng-submit="submit(photo)">
+			<input type="text" name="img-title" ng-model="photo.name" placeholder="Photo Title">
+			<input type="text" name="img-url" ng-model="photo.url" placeholder="Photo URL">
+			<textarea ng-model="photo.desc" placeholder="Photo Description"></textarea>
+			<button class="button">Post</button>
+		</form>
+	</div>
+</div>
+<div class="footer"></div>

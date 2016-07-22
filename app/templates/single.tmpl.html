@@ -1,0 +1,36 @@
+<div class="header">
+	<div class="top">
+		<div class="logo">
+			<a href="/#/home">
+				<img src="../images/insta-logo.png">
+			</a>
+		</div>
+		<div class="add-photo">
+			<div class="add-button"><a href="/#/add">+</a></div>
+		</div>
+	</div>
+</div>
+<div class="body2" ng-controller="SingleController">
+	<div class="photo-all">
+		<img ng-src="{{ singlePhoto.url }}">
+		<div class="full-desc">
+			<div class="img-desc">
+				<div class="likes">
+					{{ singlePhoto.likes }} {{ likes(singlePhoto.likes) }}
+				</div>
+				<div class="desc-text">
+					<p class="img-desc-name">{{ singlePhoto.name }}</p>
+					<p class="img-desc-title">Image Description</p>
+					<p class="img-desc-text">{{ singlePhoto.desc }}</p>
+				</div>
+			</div>
+			<div class="user-options">
+				<img src="../images/insta-likes.png" ng-click="count()">
+				<form>
+					<input class="comment-field" type="text" placeholder="Add a comment...">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer"></div>

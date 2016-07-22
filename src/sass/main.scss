@@ -1,0 +1,260 @@
+.header {
+	height: 75px;
+	width: 100%;
+	border-bottom: 1px solid #DBDBDB;
+	background-color: #FFFFFF;
+}
+
+.body {
+	background-color: #FAFAFA;
+	width: 100%;
+}
+
+.footer {
+	background-color: #FAFAFA;
+}
+
+.top {
+	width: 950px;
+	margin: auto;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.add-photo {
+	display: inline-block;
+	float: right;
+}
+
+.add-button a {
+	color: #262626;
+	text-decoration: none;
+	font-size: 45px;
+	font-weight: 100;
+	line-height: 75px;
+}
+
+
+/*HOME PAGE*/
+
+.content {
+	margin: auto;
+	width: 600px;
+	padding-top: 60px;
+}
+
+.welcome {
+	width: 540px;
+	height: 124px;
+	padding: 55px 30px;
+	background-color: #FFF;
+	border: 1px solid #EFEFEF;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.welcome img {
+	position: absolute;
+	left: 270px;
+}
+
+.welcome-text {
+	position: absolute;
+	top: 150px;
+	width: 90%;
+}
+
+.welcome-text p {
+	margin: 0;
+	text-align: center;
+}
+
+.p1 {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.image-container {
+	padding: 16px 20px;
+	border: solid 1px #EFEFEF;
+}
+
+.link-thingy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.image {
+	display: inline-block;
+	height: 185px;
+	width: 185px;
+	position: relative;
+	img {
+		height: 185px;
+		width: 183px;
+		margin-right: 2px;
+	}
+
+	&:hover {
+		.like-count {
+			opacity: 100;
+			z-index: 2;
+		}
+		img {
+			opacity: 100;
+			z-index: 2;
+		}
+		.like-num {
+			opacity: 100;
+			z-index: 2;
+		}
+	}
+}
+
+.like-count {
+	position: absolute;
+	opacity: 0;
+	height: 185px;
+	width: 183px;
+	background-color: rgba(0,0,0,.3);
+	top: 0;
+	left: 0;
+}
+
+.like-count img {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	opacity: 0;
+	top: calc(50% - 10px);
+	left: calc(50% - 10px);
+}
+
+.like-num {
+	position: absolute;
+	opacity: 0;
+	top: calc(50% - 10px);
+	left: 57%;
+	color: #fff;
+}
+
+/*SINGLE PAGE*/
+
+.body2 {
+	background-color: #FAFAFA;
+	height: 740px;
+}
+
+.photo-all {
+	width: 935px;
+	margin: auto;
+	padding-top: 60px;
+}
+
+.photo-all img {
+	height: 600px;
+	width: 600px;
+	float: left;
+}
+
+.full-desc {
+	padding: 24px;
+	height: 552px;
+	width: 287px;
+	background-color: #FFF;
+	margin-right: 0;
+	float: right;
+}
+
+.img-desc {
+	height: 533px;
+}
+
+.user-options {
+	float: left;
+	height: 25px;
+	width: 287px;
+	border-top: 1px solid #EFEFEF;
+	padding: 10px 0;
+}
+
+.user-options img {
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+}
+
+.comment-field {
+	border: 0;
+	margin-left: 45px;
+}
+
+.likes {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.img-desc-name {
+	font-weight: bold;
+	font-size: 17px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.img-desc-title {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.img-desc-text {
+	margin-top: 7px;
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+
+/*ADD PAGE*/
+
+.add-info {
+	width: 935px;
+	margin: 25px auto;
+}
+
+.form input {
+	width: 100%;
+	padding: 5px;
+	margin: 15px 0;
+	font-size: 12px;
+	border: solid 1px #EFEFEF;
+	border-radius: 3px;
+}
+
+.form textarea {
+	max-width: 85%;
+	width: 85%;
+	height: 120px;
+	padding: 5px;
+	font-size: 12px;
+	max-height: 145px;
+	margin-top: 15px;
+	border: solid 1px #EFEFEF;
+	border-radius: 3px;
+}
+
+.button {
+	display: block;
+	margin-top: 20px;
+	width: 150px;
+	height: 50px;
+	padding: 5px;
+	background-color: #88C470;
+	color: #FFF;
+	border: 0;
+	border-radius: 3px;
+}

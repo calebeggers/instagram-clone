@@ -1,0 +1,35 @@
+<div class="header">
+	<div class="top">
+		<div class="logo">
+			<a href="/#/home">
+				<img src="../images/insta-logo.png">
+			</a>
+		</div>
+		<div class="add-photo">
+			<div class="add-button"><a href="/#/add">+</a></div>
+		</div>
+	</div>
+</div>
+<div class="body" ng-controller="HomeController">
+	<div class="content">
+		<div class="welcome">
+			<img src="../images/insta-home.png">
+			<div class="welcome-text">
+				<p class="p1">Welcome to Instagram!</p>
+				<p class="p2">Follow accounts to see photos and videos in your feed.</p>
+			</div>
+		</div>
+		<div class="image-container">
+			<div class="image" ng-repeat="photo in photos">
+				<a class="link-thingy" href="#/photo/{{ photo._id }}">
+					<img class="overlay" ng-src="{{ photo.url }}">
+					<div class="like-count">
+						<img src="../images/insta-likes.png">
+						<span class="like-num">{{ photo.likes }}</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer"></div>
